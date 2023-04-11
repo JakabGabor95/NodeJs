@@ -19,6 +19,8 @@ const shopRoutes = require("./routes/shop");
 });
  */
 
+app.set("view engine", "pug");
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/admin", adminData.routes);
