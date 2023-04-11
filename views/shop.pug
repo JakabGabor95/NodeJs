@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+    body
+        header.main-header
+            nav
+                ul.main-header__nav
+                    li
+                        a.active(href="/") Shop
+                    li
+                        a(href="/admin/add-product") Add product
+        main 
+            h1 My Products
+                p List of all the products...
+            each product in prods 
+                h1 #{product.title}                 
