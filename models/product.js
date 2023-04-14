@@ -1,4 +1,4 @@
-const fs = requ;
+const products = [];
 
 module.exports = class Product {
   constructor(title) {
